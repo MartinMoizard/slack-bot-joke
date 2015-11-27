@@ -64,6 +64,10 @@ slack.on('message', function(message) {
     var channel = slack.getChannelGroupOrDMByID(message.channel);
     var user = slack.getUserByID(message.user);
 
+    if (channel.name === 'general' || message == null) {
+      return;
+    }
+
     if (message.type === 'message') {
         var futureFound;
         switch(message.text.toLowerCase()) {
