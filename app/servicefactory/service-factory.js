@@ -6,7 +6,8 @@ var existingServices = {
     'blagues': [
         require('../jokes/providers/humour-blague-service.js'),
         require('../jokes/providers/marrez-vous-service.js'),
-        require('../jokes/providers/labanane-service.js')
+        require('../jokes/providers/labanane-service.js'),
+        require('../jokes/providers/icndb-service.js')
     ],
     'chatons': require('../chatons/ditesleavecdeschatons-service.js'),
     'poils': require('../poils/poils-service.js'),
